@@ -1,38 +1,111 @@
-.App {
-  text-align: center;
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+video {
+	object-fit: cover;
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: -1;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container {
+	display: flex;
+	justify-content: center;
+	margin-top: 10px;
+}
+h1,
+h2,
+p {
+	font-family: 'Playfair Display', serif;
+	font-optical-sizing: auto;
+	font-weight: weight;
+	font-style: normal;
+}
+.title {
+	color: rgb(239, 238, 238);
+	text-shadow: 1px 2px #232323;
+	text-transform: uppercase;
+	font-size: 30px;
+	margin-top: 10px;
+	filter: drop-shadow(0 0 20px rgb(239, 227, 154))
+		drop-shadow(0 0 30px rgb(239, 227, 154));
+}
+.search {
+	width: 100%;
+	width: 300px;
+	padding: 12px 0px;
+	background-color: transparent;
+	color: #232323;
+	box-shadow: inset 0px 0px 0px 4px #ddd6e8;
+	font-size: 18px;
+	background-color: rgba(174, 246, 217, 0.5);
+	border-radius: 8px;
+  cursor:context-menu;
+}
+button {
+	margin-top: 10px;
+	border: none;
+	border-radius: 8px;
+	background-color: #dbecc4;
+  cursor: pointer;
+}
+.arrow {
+	width: 50px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.icon {
+	width: 30px;
+}
+.advice {
+	color: white;
+	text-decoration: 1px underline #f2f2f2;
+}
+.list {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	list-style-type: none;
+}
+li {
+	background-color: rgba(174, 246, 217, 0.5);
+	padding: 10px;
+	margin: 10px;
+	border-radius: 8px;
+	font-size: 17px;
 }
 
-.App-link {
-  color: #61dafb;
+.nameText {
+	color: rgba(174, 246, 217, 0.5);
+	text-shadow: 1px 1px rgb(239, 238, 238);
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.mealType,
+.typeFood,
+.diet {
+	color: white;
+	font-size: 18px;
+}
+.calories {
+	font-size: 25px;
+	color: #232323;
+	text-shadow: 1px 2px rgb(203, 203, 203);
+	text-decoration: underline;
+	background-color: rgba(243, 241, 199, 0.5);
+	padding: 10px 10px;
+	border-radius: 8px;
+	text-transform: uppercase;
+}
+.line {
+	color: white;
+}
+.recipeImage {
+	border-radius: 8px;
+	border: 1px solid rgba(174, 246, 217, 0.5);
 }
